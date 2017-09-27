@@ -17,6 +17,12 @@ void setup() {
 void draw() {
   background(255);
   drawOutlineOfLights();
+  drawCrazyLight();
+}
+
+void drawCrazyLight() {
+    fill(random(colour), random(colour), random(colour));
+    ellipse(width/2, height/2 - 65, 50, 50); //top
 }
 
 void drawOutlineOfLights() {
